@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: selenium-hub
+  labels:
+    app: selenium-hub
+spec:
+  replicas: 1
+  selector:
+    app: selenium-hub
+  template:
+    metadata:
+      labels:
+        app: selenium-hub
+    spec:
+      containers:
+      - name: selenium-hub
+        image: gcr.io/endless-gasket-165418/selenium/hub:3.1.0
+        ports:
+        - containerPort: 4444
+        livenessProbe:
+          httpGet:
+            path: /grid/console
+            port: 4444
+          initialDelaySeconds: 30
+          timeoutSeconds: 5
