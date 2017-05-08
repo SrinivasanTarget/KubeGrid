@@ -71,10 +71,14 @@ selenium-node-chrome-1222720312-j2xs6   1/1       Running   0          9s
 selenium-node-chrome-1222720312-s7n2r   1/1       Running   0          9s
 selenium-node-chrome-1222720312-tmx92   1/1       Running   0          3m
 ```
+![alt tag](Minikube_Grid_Console.png)
+
 ### Minikube Dashboard
 ```sh
 $ minikube dashboard
 ```
+![alt tag](Minikube_Dashboard.png)
+
 ## Using Google Container Registry
 Google Container Engine is also a quick way to get Kubernetes up and running: https://cloud.google.com/container-engine/
 Your cluster must have 4 CPU and 6 GB of RAM to complete the example up to the scaling portion.
