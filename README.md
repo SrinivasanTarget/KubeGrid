@@ -128,7 +128,7 @@ selenium-hub-6m8v1           1/1       Running   2          1h
 selenium-node-chrome-p6fkn   1/1       Running   0          1h
 selenium-node-chrome-phb0c   1/1       Running   0          50s
 ```
-We can see that without few seconds selenium hub replication controller automatically generates a new chrome node or pod ```selenium-node-chrome-phb0c ``` and assigns itself.
+We can see that within few seconds selenium hub replication controller automatically generates a new chrome node or pod ```selenium-node-chrome-phb0c ``` and assigns itself.
 Replication Controller is one of the greatest asset of kubernetes to manage nodes automatically in a cluster.
 
 ## kompose
